@@ -1,0 +1,15 @@
+| statement         | Magic Method             | Python Concept      |
+|-------------------|--------------------------|---------------------|
+| obj[key]          | __getitem__(key)         | Subscriptable Object|
+| obj[i:j]          |                          |                     | 
+| obj[i:j:k]        |                          |                     |
+|-------------------|--------------------------|---------------------|
+|with obj: ...      | __enter__/__exit__       | Context Manager     |
+|-------------------|--------------------------|---------------------|
+| for i in obj      | __iter__/__next__        | Iterable Object     |
+|                   | __len__/__getitem__      | Sequence            |
+|-------------------|--------------------------|---------------------|
+|obj.<attribute>    | __getattr__              | Dynamic Attribute   | 
+|                   |                          | Retrieval           |
+|-------------------|--------------------------|---------------------|
+|obj(*args,**kwargs)| __call__(*args,**kwargs) | Callable Object     |
